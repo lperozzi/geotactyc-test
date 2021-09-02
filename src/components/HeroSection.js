@@ -27,7 +27,7 @@ export default class HeroSection extends React.Component {
                   )}
                   <div className="cell section__body">
                     {_.get(section, 'title', null) && (
-                    <h1 className="mt-4 text-4xl tracking-tight font-display tracking-normal font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">{_.get(section, 'title', null)}</h1>
+                    <h1 className="mt-4 text-4xl font-display tracking-normal font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">{_.get(section, 'title', null)}</h1>
                     )}
                     {_.get(section, 'subtitle', null) && (
                     <div className="section__copy">
