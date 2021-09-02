@@ -25,7 +25,7 @@ export default class FeaturesSection extends React.Component {
                   <div className="section__body cell">
                     {_.get(feature, 'title', null) && (
                       _.get(section, 'title', null) ? (
-                      <h3 className="section__title font-display">{_.get(feature, 'title', null)}</h3>
+                      <h3 className="section__title">{_.get(feature, 'title', null)}</h3>
                       ) : 
                       <h2 className="section__title font-display text-gray-50">{_.get(feature, 'title', null)}</h2>
                     )}
