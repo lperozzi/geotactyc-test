@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
        'sans': ['ui-sans-serif', 'Bebas Neue'],
-       'serif': ['ui-serif', 'Montserrat', ...],
+       'serif': ['ui-serif', 'Montserrat'],
     //    'mono': ['ui-monospace', 'SFMono-Regular', ...],
     //    'display': ['Oswald', ...],
     //    'body': ['"Open Sans"', ...],
