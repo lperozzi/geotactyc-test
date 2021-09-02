@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     fontFamily: {
 
-      'display': ['"IBM Plex Sans Arabic"', 'Arial', 'sans-serif'],
-      'body': ['Montserrat', 'Arial', 'sans-serif'],
+      'body': ['"IBM Plex Sans Arabic"', 'Arial', 'sans-serif'],
+      'display': ['Montserrat', 'Arial', 'sans-serif'],
      }
   },
   variants: {
