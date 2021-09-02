@@ -681,7 +681,8 @@
                             "in": [
                                 "white",
                                 "gray",
-                                "blue"
+                                "blue",
+                                "transaprent" 
                             ]
                         }
                     ],
