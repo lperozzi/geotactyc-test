@@ -8,7 +8,7 @@ module.exports = {
       'display': ['Montserrat', 'Arial', 'sans-serif'],
      },
     colors: {
-     indigo: {
+     yellow: {
         light: '#b3bcf5',
         DEFAULT: '#5c6ac4',
         dark: '#202e78',
