@@ -6,7 +6,7 @@ export default class BlogPostTags extends React.Component {
         let tags = _.get(this.props, 'tags', null);
         return (
             _.map(tags, (tag, tag_idx) => (
-              <span key={tag_idx}>{tag}</span>
+              <span className="text-yellow-200" key={tag_idx}>{tag}</span>
             ))
         );
     }
