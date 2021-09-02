@@ -25,7 +25,7 @@ export default class BlogPostFeedItem extends React.Component {
                     {_.get(blog_feed_section, 'title', null) ? (
                       <h3 className="card__title text-geotactyc-light"><Link to={withPrefix(_.get(post, 'url', null))}>{_.get(post, 'frontmatter.title', null)}</Link></h3>
                     ) : 
-                      <h2 className="text-2xl card__title text-geotactyc-light font-display"><Link to={withPrefix(_.get(post, 'url', null))}>{_.get(post, 'frontmatter.title', null)}</Link></h2>
+                      <h2 className="text-2xl card__title text-gray-light font-display"><Link to={withPrefix(_.get(post, 'url', null))}>{_.get(post, 'frontmatter.title', null)}</Link></h2>
                     }
                   </header>
                   {_.get(post, 'frontmatter.excerpt', null) && (
