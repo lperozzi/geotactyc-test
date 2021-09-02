@@ -34,7 +34,7 @@ export default class BlogPostFeedItem extends React.Component {
                     </div>
                   )}
                   <footer className="card__footer">
-                    <span classNmae="">On <time dateTime={moment(_.get(post, 'frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(post, 'frontmatter.date', null)).strftime('%B %d, %Y')}</time></span>
+                    <span classNmae="text-gray-200 font-display">On <time dateTime={moment(_.get(post, 'frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(post, 'frontmatter.date', null)).strftime('%B %d, %Y')}</time></span>
                     {_.get(post, 'frontmatter.author', null) && ((() => {
                         let author = _.get(post, 'frontmatter.author', null);
                         return (
