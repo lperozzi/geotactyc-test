@@ -9,7 +9,7 @@ export default class Header extends React.Component {
         return (
             <header className="site-header">
               <div className="container container--lg">
-                <nav className="navbar" aria-label="Main Navigation">
+                <nav className="navbar font-medium" aria-label="Main Navigation">
                   <Link className="sr-only" to="#content">Skip to main content</Link>
                   {_.get(this.props, 'pageContext.site.siteMetadata.header.logo', null) ? (
                   <Link className="navbar__logo" to={withPrefix('/')}><img src={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.logo', null))} alt={_.get(this.props, 'pageContext.site.siteMetadata.header.logo_alt', null)} /></Link>
