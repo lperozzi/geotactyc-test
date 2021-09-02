@@ -13,7 +13,7 @@ module.exports = {
         DEFAULT: '#5c6ac4',
         dark: '#f12711',
      },
-     geotactyc: {
+     gray: {
         light: '#f5af19',
         DEFAULT: '#5c6ac4',
         dark: '#f12711',
