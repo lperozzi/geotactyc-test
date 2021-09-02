@@ -9,9 +9,9 @@ module.exports = {
      },
     colors: {
      geotactyc: {
-        light: '#b3bcf5',
+        light: '#f5af19',
         DEFAULT: '#5c6ac4',
-        dark: '##f12711',
+        dark: '#f12711',
      }
     },
   },
