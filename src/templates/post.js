@@ -47,7 +47,7 @@ export default class Post extends React.Component {
                     })())}
                   </div>
                 </header>
-                <div className="post__copy">
+                <div className="post__copy font-display">
                   {htmlToReact(_.get(this.props, 'pageContext.html', null))}
                 </div>
                 {_.get(this.props, 'pageContext.frontmatter.tags', null) && (
