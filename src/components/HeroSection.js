@@ -40,15 +40,6 @@ export default class HeroSection extends React.Component {
                     </div>
                     
                     )}
-                    <p
-  class="
-    inline-flex items-center h-12 w-max px-6
-    font-semibold text-green-100 bg-pink-900
-    rounded-lg border-purple-400 border-4 border-dashed
-"
->
-  Hello world
-</p>
 
                   </div>
                 </div>
