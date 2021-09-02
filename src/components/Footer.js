@@ -33,7 +33,7 @@ export default class Footer extends React.Component {
                 )}
                 <div className="site-footer__copyright">
                   {_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null) && (
-                    <span className="text-base text-gray-50 font-body">{htmlToReact(_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null))}</span>
+                    <span className="text-sm text-gray-50 font-body">{htmlToReact(_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null))}</span>
                   )}
                   {_.map(_.get(this.props, 'pageContext.site.siteMetadata.footer.links', null), (action, action_idx) => (
                     <Action key={action_idx} {...this.props} action={action} />
