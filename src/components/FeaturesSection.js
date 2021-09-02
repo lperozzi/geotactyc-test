@@ -31,7 +31,7 @@ export default class FeaturesSection extends React.Component {
                     )}
                     {_.get(feature, 'content', null) && (
                     <div className="section__copy">
-                      <span><\span>{markdownify(_.get(feature, 'content', null))}
+                      <span> className=<\span>{markdownify(_.get(feature, 'content', null))}
                     </div>
                     )}
                     {_.get(feature, 'actions', null) && (
