@@ -8,7 +8,10 @@ html {
 
 body {
 //   background-color: $color-bg;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background: #00b09b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: $color-text;
   line-height: 1.625;
   text-rendering: optimizeLegibility;
