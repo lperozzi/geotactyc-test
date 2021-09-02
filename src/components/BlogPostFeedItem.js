@@ -29,7 +29,7 @@ export default class BlogPostFeedItem extends React.Component {
                     }
                   </header>
                   {_.get(post, 'frontmatter.excerpt', null) && (
-                    <div className="card__copy">
+                    <div className="card__copy font-display">
                       <p className="text-gray-50 font-body">{_.get(post, 'frontmatter.excerpt', null)}</p>
                     </div>
                   )}
