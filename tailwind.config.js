@@ -3,7 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-       'menu': [''Bebas Neue''],
+       'menu': ['Bebas Neue', 'cursive'],
       }
     extend: {},
   },
