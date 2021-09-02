@@ -27,7 +27,7 @@ export default class FeaturesSection extends React.Component {
                       _.get(section, 'title', null) ? (
                       <h3 className="section__title">{_.get(feature, 'title', null)}</h3>
                       ) : 
-                      <h2 className="section__title font-display text-gray-50">{_.get(feature, 'title', null)}</h2>
+                      <h2 className="section__title tracking-normal	font-display text-gray-50">{_.get(feature, 'title', null)}</h2>
                     )}
                     {_.get(feature, 'content', null) && (
                     <div className="section__copy">
