@@ -33,7 +33,7 @@ export default class Post extends React.Component {
                   {_.get(this.props, 'pageContext.frontmatter.categories', null) && (
                     <BlogPostCategories {...this.props} categories={_.get(this.props, 'pageContext.frontmatter.categories', null)} container_class={'post__meta'} />
                   )}
-                  <h1 className="post__title font-display text-2xl text-gray-50">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
+                  <h1 className="post__title font-display text-3xl text-gray-50">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
                   <div className="post__meta">
                     <span>On <time dateTime={moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%B %d, %Y')}</time></span>
                     {_.get(this.props, 'pageContext.frontmatter.author', null) && ((() => {
