@@ -18,7 +18,7 @@ export default class HeroSection extends React.Component {
               {(_.get(section, 'has_background', null) && _.get(background, 'background_image', null)) && (
               <div className="bg-image__image" style={toStyleObj('background-image: url(\'' + withPrefix(_.get(background, 'background_image', null)) + '\'); opacity: ' + background_opacity + '; background-size: ' + background_size + '; background-repeat: ' + background_repeat)}/>
               )}
-              <div className="container container--lg">
+              <div className="container container--lg mb-0">
                 <div className={classNames('flex', 'flex--middle', 'flex--center', 'flex--col-2', {'align-center': _.get(section, 'align', null) === 'center', 'align-right': _.get(section, 'align', null) === 'right'})}>
                   {_.get(section, 'image', null) && (
                   <div className={classNames('cell', 'section__media', {'section__media--right': _.get(section, 'image_position', null) === 'right'})}>
