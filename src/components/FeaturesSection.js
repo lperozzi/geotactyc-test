@@ -8,7 +8,7 @@ export default class FeaturesSection extends React.Component {
     render() {
         let section = _.get(this.props, 'section', null);
         return (
-            <section className="section section--features pt-10">
+            <section className="section section--features ">
               {_.get(section, 'title', null) && (
               <div className="container container--md align-center">
                 <h2 className="section__title">{_.get(section, 'title', null)}</h2>
