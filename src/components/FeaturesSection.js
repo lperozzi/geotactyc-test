@@ -8,13 +8,13 @@ export default class FeaturesSection extends React.Component {
     render() {
         let section = _.get(this.props, 'section', null);
         return (
-            <section className="section section--features">
+            <section className="section section--features pt-14">
               {_.get(section, 'title', null) && (
               <div className="container container--md align-center">
                 <h2 className="section__title">{_.get(section, 'title', null)}</h2>
               </div>
               )}
-              <div className="container container--lg">
+              <div className="container container--lg py-10">
                 {_.map(_.get(section, 'features', null), (feature, feature_idx) => (
                 <div key={feature_idx} className={classNames('flex', 'flex--middle', 'flex--center', 'flex--col-2', {'align-center': _.get(feature, 'align', null) === 'center', 'align-right': _.get(feature, 'align', null) === 'right'})}>
                   {_.get(feature, 'image', null) && (
@@ -27,11 +27,11 @@ export default class FeaturesSection extends React.Component {
                       _.get(section, 'title', null) ? (
                       <h3 className="section__title">{_.get(feature, 'title', null)}</h3>
                       ) : 
-                      <h2 className="section__title">{_.get(feature, 'title', null)}</h2>
+                      <h2 className="section__title tracking-wide text-5xl font-display text-gray-50">{_.get(feature, 'title', null)}</h2>
                     )}
                     {_.get(feature, 'content', null) && (
                     <div className="section__copy">
-                      {markdownify(_.get(feature, 'content', null))}
+                      <span className="text-gray-50 font-body" > {markdownify(_.get(feature, 'content', null))}</span>
                     </div>
                     )}
                     {_.get(feature, 'actions', null) && (

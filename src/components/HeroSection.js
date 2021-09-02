@@ -14,7 +14,7 @@ export default class HeroSection extends React.Component {
         let background_size = _.get(background, 'background_image_size', null) || 'cover';
         let background_repeat = _.get(background, 'background_image_repeat', null) || 'no-repeat';
         return (
-            <section className={classNames('section', 'hero', {'bg-image': _.get(section, 'has_background', null) && _.get(background, 'background_image', null), 'inverse bg-blue': _.get(section, 'has_background', null) && (background_color === 'blue'), 'bg-gray': _.get(section, 'has_background', null) && (background_color === 'gray'), 'section--padding': _.get(section, 'has_background', null) || _.get(section, 'image', null)})}>
+            <section className={classNames('section', 'hero', {'bg-image': _.get(section, 'has_background', null) && _.get(background, 'background_image', null), 'inverse bg-blue': _.get(section, 'has_background', null) && (background_color === 'blue'), 'bg-transparent': _.get(section, 'has_background', null) && (background_color === 'gray'), 'section--padding': _.get(section, 'has_background', null) || _.get(section, 'image', null)})}>
               {(_.get(section, 'has_background', null) && _.get(background, 'background_image', null)) && (
               <div className="bg-image__image" style={toStyleObj('background-image: url(\'' + withPrefix(_.get(background, 'background_image', null)) + '\'); opacity: ' + background_opacity + '; background-size: ' + background_size + '; background-repeat: ' + background_repeat)}/>
               )}
@@ -27,11 +27,11 @@ export default class HeroSection extends React.Component {
                   )}
                   <div className="cell section__body">
                     {_.get(section, 'title', null) && (
-                    <h1 className="section__title">{_.get(section, 'title', null)}</h1>
+                    <h1 className="mt-4 text-4xl font-display tracking-widest font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">{_.get(section, 'title', null)}</h1>
                     )}
                     {_.get(section, 'subtitle', null) && (
                     <div className="section__copy">
-                      <p>{_.get(section, 'subtitle', null)}</p>
+                      <p className="mt-3 text-base text-gray-50 font-body sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">{_.get(section, 'subtitle', null)}</p>
                     </div>
                     )}
                     {_.get(section, 'actions', null) && (
@@ -40,15 +40,6 @@ export default class HeroSection extends React.Component {
                     </div>
                     
                     )}
-                    <p
-  class="
-    inline-flex items-center h-12 w-max px-6
-    font-semibold text-green-100 bg-pink-900
-    rounded-lg border-purple-400 border-4 border-dashed
-"
->
-  Hello world
-</p>
 
                   </div>
                 </div>

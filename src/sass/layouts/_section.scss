@@ -20,6 +20,7 @@
 
 .bg-blue,
 .bg-gray,
+.bg-transparent,
 .has-bg {
   padding-bottom: 3.75em;
   padding-top: 3.75em;
@@ -31,6 +32,10 @@
 
 .bg-gray {
   background-color: $color-bg-alt;
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .section__media,
@@ -62,6 +67,7 @@
     &:not(.section--padding) {
       margin-bottom: 2.25rem;
       padding-bottom: 0;
+      padding-top: 2.25rem;
     }
   }
 }
@@ -98,7 +104,8 @@
 
 .section--cta {
   .bg-blue,
-  .bg-gray {
+  .bg-gray,
+  .bg-transaprent {
     border-radius: 3px;
   }
 }

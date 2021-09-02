@@ -7,8 +7,12 @@
   padding: 0;
 
   li {
-    color: $color-nav-link;
+    color: #F9FAFB;
     line-height: 1.25;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    font-size: 1.1rem;
 
     &.is-active {
       color: $color-nav-link-active;

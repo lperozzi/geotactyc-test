@@ -2,7 +2,7 @@
  * Site Footer
  */
 .site-footer {
-  border-top: 1px solid $color-border;
+  border-top: 0px solid $color-border;
   padding-bottom: 1.5em;
   padding-top: 1.5em;
   text-align: center;
@@ -50,7 +50,7 @@
     margin-bottom: 0.75rem;
 
     li {
-      border-right: 1px solid $color-border;
+      border-right: 1px solid #111827;
       margin-right: 0.75rem;
       padding-right: 0.75rem;
 
