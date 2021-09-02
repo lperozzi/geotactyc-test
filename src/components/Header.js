@@ -9,7 +9,7 @@ export default class Header extends React.Component {
         return (
             <header className="site-header">
               <div className="container container--lg">
-                <nav className="navbar" aria-label="Main Navigation">
+                <nav className="navbar text-lg" aria-label="Main Navigation">
                   <Link className="sr-only" to="#content">Skip to main content</Link>
                   {_.get(this.props, 'pageContext.site.siteMetadata.header.logo', null) ? (
                   <Link className="navbar__logo" to={withPrefix('/')}><img src={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.logo', null))} alt={_.get(this.props, 'pageContext.site.siteMetadata.header.logo_alt', null)} /></Link>
@@ -20,7 +20,7 @@ export default class Header extends React.Component {
                   <button aria-label="Menu" className="btn btn--icon btn--clear navbar__menu-btn js-nav-toggle">
                     <svg className="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z" /></svg>
                   </button>
-                  <div className="navbar__menu">
+                  <div className="navbar__menu ">
                     <div className="navbar__scroller">
                       <div className="navbar__inner">
                         <button aria-label="Close" className="btn btn--icon btn--clear navbar__close-btn js-nav-toggle">
