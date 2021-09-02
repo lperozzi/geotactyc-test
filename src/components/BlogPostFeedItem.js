@@ -39,9 +39,9 @@ export default class BlogPostFeedItem extends React.Component {
                         let author = _.get(post, 'frontmatter.author', null);
                         return (
                           author.link ? (
-                            <span className="text-gray-400 font-display"> by <Link to={withPrefix(author.link)}>{author.first_name} {author.last_name}</Link></span>
+                            <span className="text-gray-dark font-display"> by <Link to={withPrefix(author.link)}>{author.first_name} {author.last_name}</Link></span>
                           ) : 
-                            <span className="text-gray-400 font-display"> by {author.first_name} {author.last_name}</span>
+                            <span className="text-gray-dark font-display"> by {author.first_name} {author.last_name}</span>
                         );
                     })())}
                   </footer>
