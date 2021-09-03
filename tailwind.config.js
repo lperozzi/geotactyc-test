@@ -17,7 +17,8 @@ module.exports = {
         vlight: '#FAFAFA',
         light: '#F4F4F5',
         normal: '#10B981',
-        dark: '#'
+        dark: '#44403C',
+        vdark: '#'
      }
     },
   },
