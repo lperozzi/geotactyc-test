@@ -26,13 +26,13 @@
 
   &:only-child {
     img {
-      border-radius: 20px;
+      border-radius: 3px;
     }
   }
 
   &--top {
     img {
-      border-radius: 3px 3px 0 0;
+      border-radius: 20px 20px 0 0;
     }
   }
 
