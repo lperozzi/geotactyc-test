@@ -18,7 +18,7 @@ module.exports = {
         light: '#F4F4F5',
         normal: '#10B981',
         dark: '#44403C',
-        vdark: '#'
+        vdark: '#1C1917'
      }
     },
   },
