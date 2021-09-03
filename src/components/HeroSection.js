@@ -35,7 +35,7 @@ export default class HeroSection extends React.Component {
                     </div>
                     )}
                     {_.get(section, 'actions', null) && (
-                    <div className="section__actions btn-group font-display text-base text-gray-50">
+                    <div className="section__actions btn-group font-display text-base text-gray-light">
                       <SectionActions {...this.props} actions={_.get(section, 'actions', null)} />
                     </div>
                     
