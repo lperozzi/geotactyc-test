@@ -20,7 +20,8 @@ background: linear-gradient(to top, #292524, #171717); /* W3C, IE 10+/ Edge, Fir
 
 a {
   color: $color-link;
-  text-decoration: underline;
+  text-decoration:  none;
+  font-weight:700;
 
   &:hover {
     text-decoration: none;
