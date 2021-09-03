@@ -14,7 +14,7 @@ export default class BlogPostFeedItem extends React.Component {
               <div className="card">
                 {_.get(post, 'frontmatter.image', null) && (
                 <Link className="card__media card__media--top" to={withPrefix(_.get(post, 'url', null))}>
-                  <img className="h-48 w-full object-cover" src={withPrefix(_.get(post, 'frontmatter.image', null))} alt={_.get(post, 'frontmatter.image_alt', null)} />
+                  <img src={withPrefix(_.get(post, 'frontmatter.image', null))} alt={_.get(post, 'frontmatter.image_alt', null)} />
                 </Link>
                 )}
                 <div className="card__body">
