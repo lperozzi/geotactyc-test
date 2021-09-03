@@ -31,7 +31,7 @@ export default class HeroSection extends React.Component {
                     )}
                     {_.get(section, 'subtitle', null) && (
                     <div className="section__copy">
-                      <p className="max-w-xl mt-5 mx-auto text-xl text-gray-light">{_.get(section, 'subtitle', null)}</p>
+                      <p className="max-w-xl mt-5 mx-auto text-xl text-gray-light font-display">{_.get(section, 'subtitle', null)}</p>
                     </div>
                     )}
                     {_.get(section, 'actions', null) && (
