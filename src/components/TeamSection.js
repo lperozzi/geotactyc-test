@@ -43,7 +43,7 @@ export default class TeamSection extends React.Component {
               </div>
               <div className="lg:col-span-2">
             <ul
-              role="list"
+        
               className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8"
             >
               {_.map(_.get(section, 'team', null), (person, person_idx) => {
