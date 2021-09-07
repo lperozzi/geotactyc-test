@@ -60,7 +60,7 @@ export default class TeamSection extends React.Component {
               role="list"
               className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8"
             >
-              {_.map((person) => (
+              {_.map(_.get(person) => (
                 <li key={person.name}>
                   <div className="space-y-4">
                     <div className="aspect-w-3 aspect-h-2">
