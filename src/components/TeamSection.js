@@ -21,7 +21,7 @@ export default class TeamSection extends React.Component {
                       <div key={person_idx} className="cell">
                         <div className="card team-member">
                           {person_data.photo && (
-                          <figure className="card__media card__media--bottom">
+                          <figure className="card__media card__media--bottom object-cover shadow-lg rounded-lg">
                             <img src={withPrefix(person_data.photo)} alt={person_data.photo_alt} />
                           </figure>
                           )}
