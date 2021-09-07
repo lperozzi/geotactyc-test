@@ -30,7 +30,7 @@ export default class TeamSection extends React.Component {
                               <h3 className="h4 card__title shadow-lg">{person_data.first_name} {person_data.last_name}</h3>
                             </header>
                             {person_data.bio && (
-                            <div className="card__copy">
+                            <div className="card__copy text-gray-light font-display">
                               <p className="text-gray-light font-display">{markdownify(person_data.bio)}</p>
                             </div>
                             )}
