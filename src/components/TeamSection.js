@@ -86,7 +86,7 @@ export default class TeamSection extends React.Component {
                     </ul>
                   </div>
                 </li>
-              ))}
+              )}
             </ul>
           </div>
             </section>
