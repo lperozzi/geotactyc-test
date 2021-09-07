@@ -27,7 +27,7 @@ export default class TeamSection extends React.Component {
                           )}
                           <div className="card__body">
                             <header className="card__header">
-                              <h3 className="h4 card__title shadow-lg font-display">{person_data.first_name} {person_data.last_name}</h3>
+                              <h3 className="card__title shadow-lg font-display">{person_data.first_name} {person_data.last_name}</h3>
                             </header>
                             {person_data.bio && (
                             <div className="card__copy text-gray-light font-display">
