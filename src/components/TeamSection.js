@@ -48,7 +48,7 @@ export default class TeamSection extends React.Component {
             >
               {_.map(_.get(section, 'team', null), (person, person_idx) => {
                       let person_data = person;
-                      return (
+                       (
                 <li key={person.name}>
                   <div className="space-y-4">
                     <div className="aspect-w-3 aspect-h-2">
