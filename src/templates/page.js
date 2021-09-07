@@ -25,7 +25,7 @@ export default class Page extends React.Component {
                   <h1 className="font-display page__title">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
                 </header>
                 <div className="page__copy">
-                  <p className="text-gray-light font-display">{htmlToReact(_.get(this.props, 'pageContext.html', null))}</p>
+                  <p className="text-gray-light font-body">{htmlToReact(_.get(this.props, 'pageContext.html', null))}</p>
                 </div>
               </div>
             </article>
