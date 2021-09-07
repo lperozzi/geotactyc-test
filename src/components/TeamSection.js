@@ -31,7 +31,7 @@ export default class TeamSection extends React.Component {
                             </header>
                             {person_data.bio && (
                             <div className="card__copy">
-                              <p className="text-gray-light text-display">{markdownify(person_data.bio)}</p>
+                              <p className="text-gray-light font-display">{markdownify(person_data.bio)}</p>
                             </div>
                             )}
                           </div>
