@@ -22,16 +22,16 @@ export default class TeamSection extends React.Component {
                         <div className="card team-member">
                           {person_data.photo && (
                           <figure className="card__media card__media--bottom">
-                            <img src={withPrefix(person_data.photo)} alt={person_data.photo_alt} />
+                            <img className="object-cover shadow-lg rounded-lg" src={withPrefix(person_data.photo)} alt={person_data.photo_alt} />
                           </figure>
                           )}
                           <div className="card__body">
                             <header className="card__header">
-                              <h3 className="h4 card__title">{person_data.first_name} {person_data.last_name}</h3>
+                              <h3 className="card__title shadow-lg text-4xl font-display">{person_data.first_name} {person_data.last_name}</h3>
                             </header>
                             {person_data.bio && (
-                            <div className="card__copy">
-                              {markdownify(person_data.bio)}
+                            <div className="card__copy text-gray-light font-display">
+                              <p className="text-gray-light font-display">{person_data.bio}</p>
                             </div>
                             )}
                           </div>
@@ -43,5 +43,6 @@ export default class TeamSection extends React.Component {
               </div>
             </section>
         );
+        
     }
 }

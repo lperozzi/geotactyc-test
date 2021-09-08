@@ -27,15 +27,15 @@ export default class HeroSection extends React.Component {
                   )}
                   <div className="cell section__body">
                     {_.get(section, 'title', null) && (
-                    <h1 className="mt-4 text-4xl font-display tracking-widest font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">{_.get(section, 'title', null)}</h1>
+                    <p className="mt-1 text-4xl font-extrabold text-gray-vlight sm:text-5xl sm:tracking-normal lg:text-6xl">{_.get(section, 'title', null)}</p>
                     )}
                     {_.get(section, 'subtitle', null) && (
                     <div className="section__copy">
-                      <p className="mt-3 text-base text-gray-50 font-body sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">{_.get(section, 'subtitle', null)}</p>
+                      <p className="max-w-xl mt-5 mx-auto text-xl text-gray-light font-display">{_.get(section, 'subtitle', null)}</p>
                     </div>
                     )}
                     {_.get(section, 'actions', null) && (
-                    <div className="section__actions btn-group">
+                    <div className="section__actions btn-group font-display text-base text-gray-light">
                       <SectionActions {...this.props} actions={_.get(section, 'actions', null)} />
                     </div>
                     

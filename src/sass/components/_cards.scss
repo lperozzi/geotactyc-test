@@ -2,9 +2,9 @@
  * Cards
  */
 .card {
-  background-color: $color-bg;
-  border: 1px solid $color-border;
-  border-radius: 3px;
+  background-color: #292524;
+  border: 0px solid $color-border;
+  border-radius: 20px;
   box-shadow: $box-shadow;
   box-sizing: border-box;
   display: flex;
@@ -32,7 +32,7 @@
 
   &--top {
     img {
-      border-radius: 3px 3px 0 0;
+      border-radius: 20px 20px 0 0;
     }
   }
 

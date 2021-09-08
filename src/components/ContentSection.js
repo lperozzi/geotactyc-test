@@ -14,7 +14,7 @@ export default class ContentSection extends React.Component {
                 )}
                 {_.get(section, 'content', null) && (
                 <div className="section__copy">
-                  {markdownify(_.get(section, 'content', null))}
+                  <p className="text-gray-light font-display"> {markdownify(_.get(section, 'content', null))}</p>
                 </div>
                 )}
               </div>
